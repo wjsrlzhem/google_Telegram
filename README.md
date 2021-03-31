@@ -2,4 +2,4 @@
 Talk with telegram , using google(TTS,STT) API
 
 
-you need to setting telegram
+telegram 세팅해야됌
