@@ -168,7 +168,7 @@ def listen_print_loop(responses):
         #
         # If the previous result was longer than this one, we need to print
         # some extra spaces to overwrite the previous result
-        overwrite_chars = " " * (num_chars_printed - len(transcript)) # ??????????????? 무슨 목적?
+        overwrite_chars = " " * (num_chars_printed - len(transcript)) 
         
         if not result.is_final:
             sys.stdout.write(transcript + overwrite_chars + "\r")
@@ -180,7 +180,7 @@ def listen_print_loop(responses):
         else:
             print(transcript + overwrite_chars)
             proc_trans = transcript.replace(" ","")
-            if proc_trans in script:
+            if proc_trans in script:                    #대화엑셀파일에 있는 대사를 본다.
                 print(script.get(proc_trans))
                 run_quickstart(script.get(proc_trans))
 
