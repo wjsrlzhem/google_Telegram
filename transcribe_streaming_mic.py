@@ -44,13 +44,13 @@ from six.moves import queue
 # 잘 못 찾아서 넣어줌
 
 # stt
-credential_path = "C:\\Users\\arist\\Downloads\\pragmatic-app-300806-432b28d49b65.json"
+credential_path = "YOURS"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 
 #엑셀 읽기
 
-load_wb = load_workbook("C:/Users/arist/speech/대화.xlsx", data_only=True)
+load_wb = load_workbook("C:/Users/YOURS/speech/대화.xlsx", data_only=True)
 
 load_ws = load_wb['Sheet1']
 
